@@ -27,9 +27,9 @@ services:
       - 27017:27017
       - 28017:28017
     environment:
-      #- MONGO_INITDB_DATABASE=transport
-      #- MONGO_INITDB_ROOT_USERNAME=master
-      #- MONGO_INITDB_ROOT_PASSWORD=letmein
+      # - MONGO_INITDB_DATABASE=transport
+      # - MONGO_INITDB_ROOT_USERNAME=master
+      # - MONGO_INITDB_ROOT_PASSWORD=letmein
       - AUTH=no
     networks:
       - mongonet
