@@ -11,6 +11,12 @@ services:
     environment:
       - NEO4J_AUTH=neo4j/letmein
 
+  postgres:
+    container_name: dart_postgres
+    build: ./postgres/
+    ports:
+      - 5432:5432
+
   rabbitmq:
     container_name: dart_rabbit
     image: rabbitmq:3.8.4-management

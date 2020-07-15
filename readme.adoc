@@ -8,3 +8,14 @@ https://dart.dev/guides/language/effective-dart/style
 
 https://pub.dev/packages/mongo_dart
 
+## Postgres
+
+https://pub.dev/packages/postgres
+
+https://aqueduct.io/ ???
+
+## Environment
+
+https://pub.dev/packages/dotenv
+
+https://pub.dev/packages/safe_config

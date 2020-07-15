@@ -1,5 +1,5 @@
-import 'package:rabbitmessage/main.dart' as rabbitmessage;
+import 'package:rabbitmessage/rabbitmessage.dart' as rabbitmessage;
 
-void main(List<String> arguments) {
-  print('Hello world: ${rabbitmessage.calculate()}!');
+Future<void> main(List<String> arguments) async {
+
 }

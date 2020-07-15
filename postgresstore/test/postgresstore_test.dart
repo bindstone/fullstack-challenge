@@ -1,4 +1,4 @@
-import 'package:postgresstore/main.dart';
+import 'package:postgresstore/postgresstore.dart';
 import 'package:test/test.dart';
 
 void main() {
