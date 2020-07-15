@@ -14,6 +14,10 @@ https://pub.dev/packages/postgres
 
 https://aqueduct.io/ ???
 
+## RabbitMQ
+
+https://pub.dev/packages/dart_amqp
+
 ## Environment
 
 https://pub.dev/packages/dotenv
