@@ -24,7 +24,36 @@ services:
       - 5672:5672
       - 15672:15672
 
-  # mongod --httpinterface
+  postgres-keycloak:
+    container_name: dart_keycloak_pg
+    image: postgres
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
+    networks:
+      - keycloaknet
+
+  keycloak:
+    container_name: dart_keycloak
+    build: ./keycloak/
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: dart_keycloak_pg
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_SCHEMA: public
+      DB_PASSWORD: password
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: letmein
+      KEYCLOAK_IMPORT: "/tmp/realm-export.json"
+    ports:
+      - 8085:8080
+    depends_on:
+      - postgres-keycloak
+    networks:
+      - keycloaknet
+
   mongodb:
     container_name: dart_mongodb
     hostname: mongodb
@@ -56,4 +85,6 @@ services:
 
 networks:
   mongonet:
+    driver: bridge
+  keycloaknet:
     driver: bridge

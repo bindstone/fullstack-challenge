@@ -18,8 +18,18 @@ https://aqueduct.io/ ???
 
 https://pub.dev/packages/dart_amqp
 
+## Authentication
+
+https://pub.dev/packages/oauth2
+
+http://127.0.0.1:8085/auth/
+
+http://127.0.0.1:8085/auth/realms/dart_realm/protocol/openid-connect/auth?client_id=account
+
 ## Environment
 
 https://pub.dev/packages/dotenv
 
 https://pub.dev/packages/safe_config
+
+http://www.mastertheboss.com/jboss-frameworks/keycloak/keycloak-with-docker
