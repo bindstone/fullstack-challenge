@@ -31,5 +31,3 @@ http://127.0.0.1:8085/auth/realms/dart_realm/protocol/openid-connect/auth?client
 https://pub.dev/packages/dotenv
 
 https://pub.dev/packages/safe_config
-
-http://www.mastertheboss.com/jboss-frameworks/keycloak/keycloak-with-docker
