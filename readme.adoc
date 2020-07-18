@@ -18,6 +18,9 @@ https://aqueduct.io/ ???
 
 https://pub.dev/packages/dart_amqp
 
+## Event Bus
+https://github.com/marcojakob/dart-event-bus
+
 ## Authentication
 
 https://pub.dev/packages/oauth2
