@@ -21,7 +21,12 @@ https://pub.dev/packages/dart_amqp
 ## Event Bus
 https://github.com/marcojakob/dart-event-bus
 
+## Reactive RX
+https://pub.dev/packages/rxdart
+
 ## Authentication
+
+https://pub.dev/packages/openid_client
 
 https://pub.dev/packages/oauth2
 
