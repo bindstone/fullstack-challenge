@@ -83,6 +83,13 @@ services:
       - ME_CONFIG_MONGODB_SERVER=mongodb
       - ME_CONFIG_MONGODB_PORT=27017
 
+  mail:
+    container_name: dart_mail
+    image: schickling/mailcatcher
+    ports:
+    - 1080:1080
+    - 1025:1025
+
 networks:
   mongonet:
     driver: bridge
